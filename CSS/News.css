@@ -1,0 +1,26 @@
+.News {
+    text-align: left;
+}
+
+.NewsTitle {
+    text-decoration: none;
+    color: black;
+}
+
+.NewsTitle:hover {
+    color: rgb(0, 102, 186);
+    text-decoration: underline;
+}
+
+.NewsTitle:visited {
+    color: rgb(187, 121, 0);
+}
+
+.NewsDate {
+    float: left;
+    width: 60px;
+    text-align: left;
+    /* background-color: rgb(166, 255, 0); */
+    color: black;
+    margin-right: 10px;
+}

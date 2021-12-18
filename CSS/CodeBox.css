@@ -1,0 +1,96 @@
+/* Set the box to contain the codes */
+
+.CodeBigBox {
+    text-align: left;
+    width: 1000px;
+    height: auto;
+    background: rgb(0, 16, 0);
+    color: white;
+    /* border: 1px solid black; */
+    /* border: 1px solid white; */
+    border: 1px solid rgb(220, 253, 198);
+    overflow-y: auto;
+}
+
+.CodeBox {
+    float: left;
+    font-size: 115%;
+    text-align: left;
+    width: 933px;
+    height: auto;
+    /* background: rgb(0, 218, 47); */
+    padding-left: 10px;
+}
+
+.CodeLines {
+    /* __________________________________________________________________ */
+    /* __________________________________________________________________ */
+    /* Define and set the words inside the div box can not be selected by cursor. */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* __________________________________________________________________ */
+    /* __________________________________________________________________ */
+    float: left;
+    text-align: center;
+    width: 50px;
+    height: auto;
+    background: rgb(231, 70, 0);
+    color: rgb(0, 255, 0);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* a more */
+
+.aMore {
+    text-decoration: none;
+}
+
+.aMore:hover {
+    color: rgb(66, 221, 66);
+}
+
+.aMore:active {
+    color: rgb(255, 66, 0);
+}
+
+.aMore:visited {
+    color: rgb(255, 187, 0);
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* Font */
+
+.KW {
+    /* color: rgb(37, 173, 2); */
+    color: rgb(38, 192, 0);
+    font-weight: 100;
+}
+
+.Str {
+    /* color: rgb(162, 212, 138); */
+    color: rgb(230, 193, 138);
+    font-weight: 100;
+}
+
+.Anot {
+    color: rgb(186, 196, 186);
+    font-weight: 100;
+}

@@ -1,0 +1,424 @@
+/* __________________________________________________________________________________________________________________ */
+
+
+/* __________________________________________________________________________________________________________________ */
+
+
+/* The Basic bar */
+
+.BasicBar {
+    position: fixed;
+    /* background: rgb(255, 216, 0); */
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: block;
+    z-index: 1003;
+    /* display: none; */
+}
+
+.BasicBar:hover .LeftNavigation {
+    display: block;
+}
+
+
+/* The tool bar on the left */
+
+.LeftNavigation {
+    position: fixed;
+    /* background: linear-gradient(#ff8800, rgb(255, 38, 0)); */
+    background: linear-gradient( rgba(42, 99, 37, 0.666), rgba(61, 35, 26, 0.856));
+    /* background: white; */
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    /* font-family: "Arial"; */
+    color: white;
+    z-index: 1006;
+    display: none;
+}
+
+
+/* _____________________________________________________________________________________________________ */
+
+
+/* The button on the tool bar */
+
+.BarButton {
+    margin: 0% auto;
+    /* margin-top: 9%; */
+    /* background: linear-gradient( rgba(69, 255, 100, 0.888), rgba(0, 255, 221, 0.816)); */
+    border-bottom: 2px solid #00e2e2;
+    width: 100%;
+    height: 28px;
+    /* min-height: 5%; */
+    /* border-radius: 3px; */
+    /* color: black; */
+    color: white;
+    background-size: contain;
+    font-size: 86%;
+    line-height: 222%;
+}
+
+.BarButton:hover {
+    background: linear-gradient( rgba(227, 255, 69, 0.888), rgba(250, 50, 0, 0.888));
+    border-top: 1px solid #33ff00;
+    border-bottom: 2px solid #33ff00;
+    color: rgb(77, 255, 88);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.BarButton:active {
+    background: linear-gradient( rgba(66, 255, 85, 0.888), rgba(0, 136, 136, 0.888));
+    border-bottom: 2px solid #eb2300;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+/* Go front and go back */
+
+.BarButtonGo {
+    margin: 0% auto;
+    /* margin-top: 9%; */
+    /* background: linear-gradient( rgba(69, 255, 100, 0.888), rgba(0, 255, 221, 0.816)); */
+    border-bottom: 2px solid #00e2e2;
+    width: 100%;
+    height: 30px;
+    /* min-height: 5%; */
+    /* border-radius: 3px; */
+    /* color: black; */
+    color: white;
+    overflow: hidden;
+    background-size: contain;
+    font-size: 80%;
+    line-height: 250%;
+}
+
+
+/* Half navigation button */
+
+.HalfBox {
+    float: left;
+    /* background: #33ff00; */
+    width: 38px;
+    height: 100%;
+    border: 1px solid #eb3a00;
+    font-weight: 900;
+}
+
+.HalfBox:hover {
+    float: left;
+    background: linear-gradient( rgb(69, 255, 140), rgb(0, 180, 155));
+    width: 38px;
+    height: 100%;
+    border: 1px solid #eb2300;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.HalfBox:active {
+    float: left;
+    background: linear-gradient( rgb(255, 196, 69), rgb(255, 83, 3));
+    width: 38px;
+    height: 100%;
+    border: 1px solid #eb2300;
+    font-weight: 900;
+    color: rgb(0, 255, 26);
+    cursor: pointer;
+}
+
+
+/* _______________________________________________________________________________________________________________ */
+
+
+/* _______________________________________________________________________________________________________________ */
+
+
+/* GoTo Button */
+
+.GoToBtn {
+    float: left;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 18px;
+    background: linear-gradient( rgb(163, 255, 126), rgb(19, 99, 99));
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+    width: 133px;
+    height: 50px;
+    border: 5px solid #339672;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.GoToBtn:hover {
+    background: linear-gradient( rgba(255, 238, 0, 0.666), rgba(255, 62, 3, 0.926));
+    border: 5px solid #01ff9d;
+}
+
+.GoToBtn:active {
+    background: linear-gradient( rgba(95, 255, 2, 0.766), rgba(3, 255, 200, 0.888));
+    color: black;
+    border: 5px solid #ff6006;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* Content panel 1 */
+
+.BarPanel {
+    position: fixed;
+    top: 20px;
+    left: 80px;
+    width: 1010px;
+    height: 600px;
+    /* background: #eb2300; */
+    display: none;
+}
+
+
+/* Connet the bar panel with the bar button */
+
+.BarButton:hover .BarPanel {
+    display: block;
+}
+
+
+/* Real content of the Barpanel */
+
+.BarPanelContent {
+    float: left;
+    margin-left: 10px;
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient( rgba(99, 230, 0, 0.822), rgba(66, 141, 116, 0.89));
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: left;
+    color: white;
+    overflow-y: auto;
+}
+
+
+/* _______________________________________________________________________________________________________________ */
+
+
+/* BarTitle */
+
+.BarTitle {
+    border-bottom: 2px solid #00e2e2;
+    width: 100%;
+    cursor: pointer;
+}
+
+.BarPanelContent hr {
+    width: 96%;
+    height: 2px;
+    background-color: #ebe700;
+}
+
+.BarPanelContent a {
+    text-decoration: none;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* Gap 20px */
+
+.LineGapLeft20 {
+    float: left;
+    /* background: #ff8800; */
+    width: 20px;
+    height: 100%;
+}
+
+.LineGapTop20 {
+    float: top;
+    /* background: #00ff73; */
+    width: 100%;
+    height: 20px;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* Setting */
+
+
+/* .ColorBtn Setting */
+
+.ColorBtn {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.ColorBtn:hover {
+    border: 3px solid rgb(30, 255, 0);
+}
+
+.ColorBtn:active {
+    border: 3px solid rgb(255, 102, 0);
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* FoldBox */
+
+.FoldBoxTitle {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    background: #ff7b00;
+    cursor: pointer;
+    text-align: center;
+}
+
+.FoldBox {
+    margin: 0 auto;
+    width: 96%;
+    height: 30px;
+    background: white;
+    transition: height 1.66s;
+    overflow: hidden;
+    background: #339672;
+}
+
+.FoldBox:hover {
+    height: 220px;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.FoldBoxTitleFont {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    background: #ff7b00;
+    cursor: pointer;
+    text-align: center;
+}
+
+.FoldBoxFont {
+    margin: 0 auto;
+    width: 96%;
+    height: 30px;
+    background: white;
+    transition: height 1.88s;
+    overflow: hidden;
+    background: #339672;
+}
+
+.FoldBoxFont:hover {
+    height: 300px;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* FontChoice */
+
+.FontChoiceBox {
+    float: left;
+    height: 30px;
+    width: 170px;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.FontChoiceBox:hover {
+    border: 1px solid rgb(21, 255, 0);
+    color: #00cbe6;
+}
+
+.FontChoiceBox:active {
+    border: 1px solid rgb(255, 72, 0);
+    color: #ff5201;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* Setting Restore */
+
+.ReSetBtn {
+    float: right;
+    text-align: center;
+    margin-right: 16px;
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 100%;
+    background: rgb(255, 81, 0);
+}
+
+.ReSetBtn:hover {
+    background: rgb(0, 255, 85);
+}
+
+.ReSetBtn:active {
+    background: rgb(0, 255, 213);
+    color: black;
+}

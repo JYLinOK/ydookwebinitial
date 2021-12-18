@@ -1,0 +1,75 @@
+/* The entire  ContentBox*/
+
+.ContentBox {
+    margin: 0 auto;
+    /* 总共实际宽度为1100px */
+    width: 1100px;
+    height: 538px;
+    /* background: linear-gradient(#ff8800, rgb(255, 38, 0)); */
+    background-color: white;
+    border: 1px solid #009999;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ContentBoxPic {
+    margin: 0 auto;
+    /* 总共实际宽度为1100px */
+    width: 1100px;
+    height: 550px;
+    border: 1px solid #009999;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+
+/* Half the ContentBox */
+
+.ContentBoxHalf_L {
+    /* 总共实际宽度为1200px */
+    float: left;
+    width: 583px;
+    border: 1px solid #009999;
+    height: 538px;
+    background: rgb(255, 251, 0);
+    /* background-color: #ff6600; */
+    border-radius: 6px;
+    color: azure;
+}
+
+.ContentBoxHalf_R {
+    /* 总共实际宽度为1200px */
+    float: right;
+    width: 583px;
+    border: 1px solid #009999;
+    height: 530px;
+    background: rgb(0, 255, 242);
+    /* background-color: #ff6600; */
+    border-radius: 6px;
+    color: azure;
+}
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+/* gap */
+
+.gapVertical_10px {
+    float: left;
+    width: 10px;
+    height: 100%;
+    /* background: #fffb00; */
+}
+
+.gapHorizontal_10px {
+    float: top;
+    width: 100%;
+    height: 10px;
+    /* background: #00ff22; */
+}
