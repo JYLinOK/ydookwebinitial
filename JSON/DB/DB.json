@@ -1,0 +1,21 @@
+{
+    "servername": "localhost",
+    "username": "root",
+    "password": "878889",
+    "dbname_UserDB": "UserDB",
+    "dbname_VisitDB": "VisitDB",
+    "dbTname_user": "userTable",
+    "dbTname_visit": "visitTable",
+    "IF_DELECT_UserDB_userTable": false,
+    "IF_DELECT_VisitDB_visitTable": false
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,84 @@
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- 左边导航栏 -->
+<!-- 必须对<a>进行CSS样式的字体颜色修改才有效！！！ -->
+<ul id="ListGo">
+    <li><a id="a_1" href="/H2_AI/1_AISciPopular/1_AISciPopular.html">概述</a></li>
+    <li><a id="a_2" href="/H2_AI/1_AISciPopular/2_Common_concepts.html">常用概念</a></li>
+    <li><a id="a_3" href="/H2_AI/1_AISciPopular/3_SearchAndProblemSolving.html">搜索与问题求解</a></li>
+    <li><a id="a_4" href="/H2_AI/1_AISciPopular/4_BasicSearchStrategies.html">搜索的基本策略</a></li>
+    <li><a id="a_5" href="/H2_AI/1_AISciPopular/5_GraphSearchAlgorithms.html">图搜索算法策略</a></li>
+
+
+
+
+
+    <!-- _____________________________________________________________________________________ -->
+    <li><a id="a_6" href="/H2_AI/1_AISciPopular/100_Reference.html">参考文献</a></li>
+</ul>
+
+
+
+
+
+
+
+<!-- __________________________________________________________________________________________________________ -->
+<!-- __________________________________________________________________________________________________________ -->
+<!-- __________________________________________________________________________________________________________ -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Set the transform color
+        var tran_color = "linear-gradient( rgb(188, 238, 0), rgb(66, 226, 126))";
+        // var tran_color = "black";
+
+        // Get this page name as a temp
+        var Url = url0;
+        var url_len = Url.length;
+
+        // ________________________________________________________________
+        // ________________________________________________________________
+        var subUrl = Url.slice(Url.lastIndexOf("/") + 1, Url.indexOf(".html"));
+        // alert("subUrl = " + subUrl)
+        // ________________________________________________________________
+        // ________________________________________________________________
+        var num_subUrl = subUrl.slice(0, subUrl.indexOf("_"));
+        // alert("num_subUrl = " + num_subUrl)
+        // ________________________________________________________________
+        // ________________________________________________________________
+
+        var act_color = "rgb(0, 0, 0)";
+
+        // Use the for loop
+        for (var i = 1; i <= 100; i++) {
+            var a_id = "a_" + i.toString();
+            if (num_subUrl == i.toString()) {
+                document.getElementById(a_id).style.background = tran_color;
+                document.getElementById(a_id).style.color = act_color;
+                document.getElementById(a_id).style.fontWeight = "bold";
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+    //______________________________________________________________________________________________
+    //______________________________________________________________________________________________
+</script>
